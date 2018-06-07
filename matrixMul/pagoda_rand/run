@@ -1,0 +1,9 @@
+#!/bin/sh
+n=0
+RUN=2
+while [  $n -le $RUN ]; do
+	./matrixMul
+	sleep 2
+	n=$( expr $n + 1 )
+	echo "$n times"
+done
